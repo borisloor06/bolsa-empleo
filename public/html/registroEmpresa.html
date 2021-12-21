@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empresa</title>
+    <link rel="stylesheet" href="../css/registros.css">
+</head>
+
+<body>
+    <!-- <header>
+        <div class="logo"><a href="#"><img src="uleam.png" alt="uleam"></a></div>
+        <div class="inicio"><a href="bolsadeempleo.uleam.edu.ec">Inicio</a></div>
+        <div class="sesion"><a href="#">Iniciar Sesión</a></div>
+    </header> -->
+    <main>
+		<h1>Registro de Empresas</h1>
+		<form method="POST" action="/registroEmpresa"  class="formulario" id="formulario">
+            <h2>Datos Empleador</h2><br>
+			<!-- Grupo: Nombre Empleador -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombres</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Jairo">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe ingresar sus nombres completos y no puede contener numeros, guion bajo o signos especiales.</p>
+			</div>
+
+            <!-- Grupo: Apellido Empleador -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellidos</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Mero Macias ">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe ingresar sus apellidos completos y no puede contener numeros, guion bajo o signos especiales.</p>
+			</div>
+
+            <!-- Grupo: Cédula -->
+            <div class="formulario__grupo" id="grupo__cedula">
+                <label for="cedula" class="formulario__label">Cédula</label>
+				<div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="cedula" id="cedula" placeholder="1306541325">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La cédula solo puede contener números y el maximo son 10 digitos.</p>
+			</div>
+
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@live.uleam.edu.ec">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+
+            <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña debe tener al menos 8 carácteres, una mayúscula y un número</p>
+			</div>
+
+			<!-- Grupo: Repetir Contraseña -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="0912345675">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Actividad Comercial -->
+			<div class="formulario__grupo" id="grupo__actividad">
+				<label for="actividad" class="formulario__label">Actividad Comercial</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="actividad" id="actividad" placeholder="">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe ingresar una actividad comercial</p>
+			</div>
+
+            <h2>Datos Empresa</h2><br>
+            <!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__ruc">
+                <label for="ruc" class="formulario__label">RUC</label>
+				<div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="ruc" id="ruc" placeholder="1306541325001">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El ruc solo puede contener números y el sujifo 001, con un maximo de 13 digitos.</p>
+			</div>
+
+            <!-- Grupo: Empresa -->
+			<div class="formulario__grupo" id="grupo__empresa">
+				<label for="empresa" class="formulario__label">Nombre de la Empresa</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="empresa" id="empresa" placeholder="">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe ingresar el nombre de su empresa</p>
+			</div>
+
+            <!-- Grupo: Empresa -->
+            <div class="formulario__grupo" id="grupo__sede">
+                <label for="sede" class="formulario__label">Sede</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="sede" id="sede" placeholder="Principal">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debe ingresar el nombre de la sede</p>
+            </div>
+
+            <!-- Grupo: Teléfono Empresa-->
+			<div class="formulario__grupo" id="grupo__telefono1">
+				<label for="telefono1" class="formulario__label">Teléfono de Contacto</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono1" id="telefono1" placeholder="0912345675">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+			</div>
+
+            <!-- Grupo: Pais -->
+            <div class="formulario__grupo" id="grupo__pais">
+                <label for="pais" class="formulario__label">País</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="pais" id="pais" placeholder="Ecuador">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debe ingresar el nombre del país</p>
+            </div>
+
+            <!-- Grupo: Provincia -->
+            <div class="formulario__grupo" id="grupo__provincia">
+                <label for="provincia" class="formulario__label">Provincia</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="provincia" id="provincia" placeholder="Manabí">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debe ingresar el nombre de la provincia</p>
+            </div>
+
+            <!-- Grupo: Ciudad -->
+            <div class="formulario__grupo" id="grupo__ciudad">
+                <label for="ciudad" class="formulario__label">Ciudad</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Manta">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debe ingresar el nombre de la ciudad</p>
+            </div>
+
+            <!-- Grupo: Dirección -->
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Dirección</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debe ingresar una dirección</p>
+            </div>
+
+            <!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn" [href]="../html/home-Empresas.html">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+		</form>
+		<button class="cancel"  id="cancel">Cancelar</button>
+	</main>
+    <script src="../js/validarRegistro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+  <main>
+    <div class="login-box">
+      <img src="../img/logo1.png" class="avatar" alt="Avatar Image">
+      <h1>ULEAM INICIO</h1>
+      <form id="form" method="POST" action="/login">
+        <label for="email">Correo Eléctronico</label>
+        <input type="text" name="email" placeholder="Ingrese su correo eléctronico">
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" placeholder="Ingrese su contraseña">
+        <input type="submit" value="Iniciar sesión" id="send">
+        <a href="#">¿Olvidaste tu contraseña?</a><br>
+      </form>
+        <div class="register-box">
+          <button id="estudiante">Crear cuenta de estudiante</button>
+          <button id="empresa">Crear cuenta de empresa</button>
+        </div>
+
+
+    </div>
+  </main>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

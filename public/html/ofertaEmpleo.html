@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Nueva oferta </title>
+    <link href="../css/ofertaEmpleo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="slogan">
+        <div class="slogan1">
+            <h1>¡Ofertas de trabajo!</h1>
+            <p><b>Ingresa las mejores ofertas de trabajo de forma sencilla.</b></p>
+        </div>
+    </header>
+    <main>
+        <div class="registro" id="form">
+            <h1>Nueva Oferta de Trabajo</h1>
+            <p>
+                <b> Todos los campos son requeridos* </b></p><br>
+            <div class="espacio">
+                <h3>Titulo</h3>
+                <input class="control" type="text" name="Titulo" id="Titulo" placeholder="Titulo">
+                <h3>Puesto</h3>
+                <input class="control" type="text" name="Puesto" id="Puesto" placeholder="Puesto de Trabajo"><br>
+                <h3>Número de vacantes</h3>
+                <input class="control" type="text" name="Numero" id="Numero" placeholder="Numero de vacantes"><br>
+                <h3>Provincia</h3>
+                <input class="control" type="text" name="Provincia" id="Provincia" placeholder="Provincia"><br>
+                <h3>Localidad</h3>
+                <input class="control" type="text" name="Localidad" id="Localidad" placeholder="Localidad"><br>
+                <h3>Sueldo</h3>
+                <input class="control" type="number" name="Sueldo" id="Sueldo" placeholder="Sueldo"><br>
+                <h3>Funciones</h3>
+                <input class="control" type="text" name="Funciones" id="Funciones" placeholder="Funciones del puesto"><br>
+                <h3>Requisitos</h3>
+                <input class="control" type="text" name="Requisitos" id="Requisitos" placeholder="Requisitos"><br>
+                <button class="boton">Enviar</button>
+                <button class="cancel"  id="cancel">Cancelar</button>
+            </div>
+        </div>
+        
+    </main>
+    <div class="notification" aria-live="assertive"></div>
+    <script src="../js/ofertaEmpleo.js"></script>
+</body>
+
+</html>
