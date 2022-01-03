@@ -1,5 +1,6 @@
 const pool = require('../db')
 <<<<<<< HEAD
+<<<<<<< HEAD
 const resDB = (err, result, res, next) =>{
   if (err) {
     throw(err)
@@ -123,6 +124,8 @@ const ofertaEmp = async (req, res, next) => {
     }
     
 =======
+=======
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
 const path = require('path')
 
 const login = async (req, res) => {
@@ -254,12 +257,16 @@ const registroEmpresa = async (req, res, next) => {
     } catch (error) {
         next(error);
     }
+<<<<<<< HEAD
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
+=======
 >>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
 }
 
 
 
 module.exports = {
+<<<<<<< HEAD
 <<<<<<< HEAD
     home,
     homeEmpresa,
@@ -275,6 +282,8 @@ module.exports = {
     getExperienciaEst,
     getOfertas
 =======
+=======
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
     ingresoUsuario,
     registroEmpresa,
     registroEstudiante,
@@ -290,5 +299,8 @@ module.exports = {
     getEmpleos,
     getOfertaEmp,
     getPostulaciones
+<<<<<<< HEAD
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
+=======
 >>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
 }

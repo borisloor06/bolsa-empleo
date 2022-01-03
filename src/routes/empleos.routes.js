@@ -1,5 +1,6 @@
 const {Router} = require('express');
 <<<<<<< HEAD
+<<<<<<< HEAD
 //importamos los controladores para las rutas
 const {home, homeEmpresa, editEmp, editEst, getEmpleos, ofertaEmp, getPerfilEmp, getPerfilEst, getPostulaciones, getFormacionEst, getCursosEst, getExperienciaEst, getOfertas} = require('../controllers/empleos.controllers')
 const { ingresoUsuario, registroEmpresa, registroEstudiante, auth, logout} = require('../controllers/autenticacion.controllers');
@@ -31,6 +32,8 @@ router.post('/registroEmpresa', registroEmpresa)
 router.get('/logout', logout)
 
 =======
+=======
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
 //const { route } = require('express/lib/application');
 const {ingresoUsuario, login, home, homeEmpresa, getRegEst, getRegEmp, registroEstudiante, registroEmpresa, getEditEmp, getEditEst, getEmpleos, getOfertaEmp, getPerfilEmp, getPerfilEst, getPostulaciones} = require('../controllers/empleos.controllers')
 
@@ -60,6 +63,9 @@ router.post('/registroEstudiante', registroEstudiante)
 
 router.get('/registroEmpresa', getRegEmp)
 router.post('/registroEmpresa', registroEmpresa)
+<<<<<<< HEAD
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
+=======
 >>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
 
 module.exports = router;

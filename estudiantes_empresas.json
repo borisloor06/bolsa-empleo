@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{
     "id_usuario": 15,
     "nom_usuario": "Pedro",
@@ -36,6 +37,9 @@
     "ciudad_emp": "Manta",
     "dir_emp": "calle 2Av. Inicio"
 }]
+=======
+[{"id_usuario":15,"nom_usuario":"Pedro","ape_usuario":"Macias","contrasena_usuario":"Pedro1234","email_usuario":"pedro@example.com","telefono_usuario":"0987612345"},{"id_usuario":16,"nom_usuario":"Juan","ape_usuario":"Bravo","contrasena_usuario":"Juan1234","email_usuario":"juan@example.com","telefono_usuario":"0912345678"},{"id_usuario":17,"nom_usuario":"Boris Leonel","ape_usuario":"Loor Barreto","contrasena_usuario":"Boris1234","email_usuario":"boris@example.com","telefono_usuario":"0984237523"},{"id_empresa":6,"nombre_emp":"Caroline Lisseth","apellido_emp":"Lucas Lucas","ced_emp":"1350854814","email_emp":"crliset18@gmail.com","contrasena_emp":"Carol2684","ruc_emp":"1768165460001","nom_emp":"Doofenshmirtz MyA","sede_emp":"Principal","tel_emp":"0994137994","pais_emp":"Ecuador","prov_emp":"Manabi","ciudad_emp":"Manta","dir_emp":"calle 2Av. Inicio"}]
+>>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
 =======
 [{"id_usuario":15,"nom_usuario":"Pedro","ape_usuario":"Macias","contrasena_usuario":"Pedro1234","email_usuario":"pedro@example.com","telefono_usuario":"0987612345"},{"id_usuario":16,"nom_usuario":"Juan","ape_usuario":"Bravo","contrasena_usuario":"Juan1234","email_usuario":"juan@example.com","telefono_usuario":"0912345678"},{"id_usuario":17,"nom_usuario":"Boris Leonel","ape_usuario":"Loor Barreto","contrasena_usuario":"Boris1234","email_usuario":"boris@example.com","telefono_usuario":"0984237523"},{"id_empresa":6,"nombre_emp":"Caroline Lisseth","apellido_emp":"Lucas Lucas","ced_emp":"1350854814","email_emp":"crliset18@gmail.com","contrasena_emp":"Carol2684","ruc_emp":"1768165460001","nom_emp":"Doofenshmirtz MyA","sede_emp":"Principal","tel_emp":"0994137994","pais_emp":"Ecuador","prov_emp":"Manabi","ciudad_emp":"Manta","dir_emp":"calle 2Av. Inicio"}]
 >>>>>>> d561cc89e94de8454a528643c500b4d4477bb4f7
