@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Perfil</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/editarPerfil.css">
+    <link rel="stylesheet" href="../css/notificaciones.css">
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="logo">
+                <img src="../img/logo1.PNG" alt="Logo">
+                <h1>Empleos</h1>
+            </div>
+            <div id="icono-busqueda">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+            <div id="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li class="home"><a href="/"><i class="fas fa-file-alt"></i>Empleos Recomendados</a></li>
+                        <div class="notificacion">
+                            <img src="../img/Captura de pantalla 2021-11-21 153757.png">
+                           
+                              <div class="notification-container">
+                                <h3>Notifications
+                                  <i class="material-icons dp48 right">settings</i>
+                                </h3>
+                                <input class="checkbox" type="checkbox" id="size_1" value="small" checked />
+                                <label class="notification new" for="size_1"><em>1</em> nuevo <a href="">guest account(s)</a> have
+                                  been
+                                  created.<i class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_2" value="small" checked />
+                                <label class="notification new" for="size_2"><em>3</em> new <a href="">lead(s)</a> are available in
+                                  the system.<i class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_3" value="small" checked />
+                                <label class="notification" for="size_3"><em>5</em> new <a href="">task(s)</a>.<i
+                                    class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_4" value="small" checked />
+                                <label class="notification" for="size_4"><em>9</em> new <a href="">calendar event(s)</a> are scheduled
+                                  for today.<i class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_5" value="small" checked />
+                                <label class="notification" for="size_5"><em>1</em> blog post <a href="">comment(s)</a> need
+                                  approval.<i class="material-icons dp48 right">clear</i></label>
+              
+                              </div>
+                            
+                          </div>
+                        <li class="empleos"><a href="/empleos"> Mis Empleos</a></li>
+                        <li class="perfil"><a href="/perfil"> Perfil</a></li>
+                        <li><i class="fas fa-sign-out-alt"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div id="barra-busqueda">
+        <input type="text" id="inputSearch" placeholder="¿tipo de trabajo desea?">
+    </div>
+    <div id="busqueda">
+    </div>
+    <main>
+        <h1>Actualizar perfil</h1>
+        <div class="img-perfil">
+            <img src="../img/perfil.png" alt="foto de perfil" width="100" height="100">
+        </div>
+        <div class="datos-perfil">
+            <h2>Datos Personales</h2>
+            <div class="personales">
+                <h3>Nombres</h3>
+                <input type="text" value="Boris Leonel"></input>
+                <h3>Apellidos</h3>
+                <input type="text" value="Loor Barreto"></input>
+                <h3>Universidad</h3>
+                <input type="text" value="Universidad Laica Eloy Alfaro de Manabí"></input>
+                <h3>Facultad</h3>
+                <input type="text" value="Ciencias Informaticas"></input>
+                <h3>Carrera</h3>
+                <input type="text" value="Tecnologias de la información"></input>
+                <h3>Egresado</h3>
+                <input type="text" value="No"></input>
+                <h3>Teléfono</h3>
+                <input type="text" value="0989473278"></input>
+                <h3>Correo Eléctronico</h3>
+                <input type="text" value="boris.loor06@gmail.com"></input>
+            </div>
+            <h2>Formación Academica</h2>
+            <div class="estudios">
+                <h3>Estudios Primarios</h3>
+                <input type="text" value="Unidad Educativa Oswaldo Alvaréz Barba"></input>
+                <button id="add">Agregar</button>
+                <button id="quit">Quitar</button>
+                <h3>Estudios Secundarios</h3>
+                <input type="text" value="Unidad Educativa San José"></input>
+                <button id="add">Agregar</button>
+                <button id="quit">Quitar</button>
+            </div>
+            <h2>Cursos y capacitaciones</h2>
+            <div class="cursos">
+                <input type="text"></input>
+                <button id="add">Agregar</button>
+                <button id="quit">Quitar</button>
+            </div>
+            <h2>Experiencia Laboral</h2>
+            <div class="experiencia">
+                <input type="text"></input>
+                <button id="add">Agregar</button>
+                <button id="quit">Quitar</button>
+            </div>
+            <button id="save">Guardar</button>
+            <button id="cancel">Cancelar</button>
+        </div>
+    </main>
+    <div class="notificaciones" aria-live="assertive"></div>
+    <script src="../js/notificacion.js"></script>
+    <script src="../js/busqueda.js"></script>
+    <script src="../js/botonesPerfil.js"></script>
+    <script src="../js/validarEditar.js"></script>
+    
+</body>
+
+</html>

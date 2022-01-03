@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+body{
+    background: url(../img/logo.png);
+    background-position: center;
+    background-position-y: 200px;
+}
+main{
+    max-width: 800px;
+    width: 98%;
+    margin:auto;
+    padding: 40px;
+}
+.registro{
+
+	background: #ffffffe8;
+	padding: 30px;
+	margin: auto;
+	margin-top: 30px;
+  margin-block-end: 30px;
+	border-radius:4px;	
+	font-family: 'calibri';
+	color: rgb(0, 0, 0);
+  box-shadow: 0 4px 9px 0px rgb(0, 0, 0);
+
+}
+.control{
+  width: 100%;
+  background: rgba(194, 231, 217, 0.705);
+  border-radius:2px;
+  font-family: 'calibri';
+  font-size: 18px;
+}

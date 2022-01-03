@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/home-Empresas.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header1">
+
+            <div class="logo">
+                <img src="../img/Captura.PNG" alt="Logo">
+                <h1>Mis vacantes</h1>
+            </div>
+            <div id="icono-busqueda">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+            <div id="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="/postulaciones"> Postulaciones</a></li>
+                        <li class="vacantes"><a href="/empresa"> Mis vacantes</a></li>
+                        <li><a href="/perfil-empresa"> Perfil</a></li>
+                        <li><i class="fas fa-sign-out-alt"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="barra-busqueda">
+        <input type="text" id="inputSearch" placeholder="Ingresa palabra clave">
+    </div>
+
+    <div class="container-all" id="move-content">
+
+        <div class="slogan">
+            <div id="busqueda">
+            </div>
+            <div class="container-info-cover">
+                <h1>¡Prepara el futuro!</h1>
+                <p><b>Bienvenido.</b></p>
+            </div>
+        </div>
+
+        <div class="container-post">
+
+            <input type="radio" id="Todos" name="categories" value="Todos" checked>
+            <input type="radio" id="Publicaciones" name="categories" value="Publicaciones">
+            <input type="radio" id="Vacantes" name="categories" value="Vacantes">
+            <input type="radio" id="Eventos" name="categories" value="Eventos">
+            <input type="radio" id="Servicios" name="categories" value="Servicios">
+            
+            <div class="container-category">
+                <label for="Todos">Todos</label>
+                <label for="Publicaciones">Publicaciones</label>
+                <label for="Vacantes">Vacantes</label> 
+                <label for="Eventos">Eventos</label>
+                <label for="Servicios">Servicios</label>
+                <div>
+                    <button id="add">Agregar Postulacion</button>
+                </div>
+            </div>
+
+            <div class="posts">
+
+                <div class="post" data-category="Vacantes">
+
+                    <div class="ctn-img">
+                        <img src="../img/Captura.PNG" alt="">
+                    </div>
+                    <h2>Vendedor Freelance</h2>
+                    <span>Hace 3 horas</span>
+                    <ul class="ctn-tag">
+                        <li>Finanmotors S. A.</li>
+                        <li>Quito, Pichincha, Ecuador (Presencial)</li>
+                    </ul>
+                    <button id="eliminar">Eliminar</button>
+
+                </div>
+
+                <div class="post" data-category="Vacantes">
+
+                    <div class="ctn-img"><img src="../img/Captura.PNG" alt=""></div>
+                    <h2>Cajero/a</h2>
+                    <span>Hace 4 horas</span>
+                    <ul class="ctn-tag">
+                        <li>Finanmotors S. A.</li>
+                        <li>Quito, Pichincha, Ecuador (Presencial)</li>
+                    </ul>
+                    <button id="eliminar">Eliminar</button>
+
+                </div>
+                <div class="post" data-category="Publicaciones">
+
+                    <div class="ctn-img"><img src="../img/Captura.PNG" alt=""></div>
+                    <h2>José Hurtado</h2>
+                    <span>Hace 12 Horas</span>
+                    <ul class="ctn-tag">
+                        <p>El camino al éxito completa con perseverancia,
+                            disciplina y ambisión. Sé parte de nuestro
+                            equipo de trabajo y logra lo que muchos desean.
+                        </p>
+                    </ul>
+                    <button id="eliminar">Eliminar</button>
+
+                </div>
+
+                <div class="post" data-category="Publicaciones">
+
+                    <div class="ctn-img"><img src="../img/Captura.PNG" alt=""></div>
+                    <h2>Ing. Simon Pacheco Phd.</h2>
+                    <span>Hace 20 minutos</span>
+                    <ul class="ctn-tag">
+                        <p>Una nación se alza con el sudor y sangre de cada trabajador,
+                            el orgullo de un pueblo marcado en los cayos y cicatrices en
+                            manos fuertes y experimentadas.
+
+                        </p>
+                    </ul>
+                  <button id="eliminar">Eliminar</button>
+
+                </div>
+
+                <div class="post" data-category="Eventos">
+
+                    <div class="ctn-img"><img src="../img/Captura.PNG" alt=""></div>
+                    <h2>Formando Líderes 2021</h2>
+                    <span>mar., 23 noviembre. 16:00 </span>
+                    <ul class="ctn-tag">
+                        <p>Te invitamos a nuestro evento <br> "Formando Lideres" este  
+                        martes, 23 de noviembre a las 16:00 (4 de la tarde) en <br>
+                        nuestra sucursal ubicada en la calle San Gregorio y avenida
+                        9 de octubre,<br> no te lo puedes perder.</p>
+                    </ul>
+                    <button id="eliminar">Eliminar</button>
+
+                </div>
+
+                <div class="post" data-category="Servicios">
+
+                    <div class="ctn-img"><img src="../img/Captura.PNG" alt=""></div>
+                    <h2>Servicio de Ayuda</h2>
+                    <span>24 Horas presente</span>
+                    <ul class="ctn-tag">
+                        <li>Preguntas Frecuentes</li>
+                        <li>Contacto</li>
+                        <li>Guia de uso</li>
+                    </ul>
+                  <button id="eliminar">Eliminar</button>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/busqueda.js"></script>
+        <script src="../js/home_empresa.js"></script>
+</body>
+
+</html>

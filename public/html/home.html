@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/notificaciones.css">
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="logo">
+                <img src="../img/logo1.PNG" alt="Logo">
+                <h1>Empleos</h1>
+            </div>
+            <div id="icono-busqueda">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+            <div id="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li class="home"><a href="/"><i class="fas fa-file-alt"></i>Empleos Recomendados</a></li>
+                        <div class="notificacion">
+                            <img src="../img/Captura de pantalla 2021-11-21 153757.png">
+                           
+                              <div class="notification-container">
+                                <h3>Notifications
+                                  <i class="material-icons dp48 right">settings</i>
+                                </h3>
+                                <input class="checkbox" type="checkbox" id="size_1" value="small" checked />
+                                <label class="notification new" for="size_1"><em>1</em> nuevo <a href="">guest account(s)</a> have
+                                  been
+                                  created.<i class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_2" value="small" checked />
+                                <label class="notification new" for="size_2"><em>3</em> new <a href="">lead(s)</a> are available in
+                                  the system.<i class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_3" value="small" checked />
+                                <label class="notification" for="size_3"><em>5</em> new <a href="">task(s)</a>.<i
+                                    class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_4" value="small" checked />
+                                <label class="notification" for="size_4"><em>9</em> new <a href="">calendar event(s)</a> are scheduled
+                                  for today.<i class="material-icons dp48 right">clear</i></label>
+              
+                                <input class="checkbox" type="checkbox" id="size_5" value="small" checked />
+                                <label class="notification" for="size_5"><em>1</em> blog post <a href="">comment(s)</a> need
+                                  approval.<i class="material-icons dp48 right">clear</i></label>
+              
+                              </div>
+                            
+                          </div>
+                        <li class="empleos"><a href="/empleos"> Mis Empleos</a></li>
+                        <li class="perfil"><a href="/perfil"> Perfil</a></li>
+                        <li><i class="fas fa-sign-out-alt"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="barra-busqueda">
+        <input type="text" id="inputSearch" placeholder="¿tipo de trabajo desea?">
+    </div>
+    <div class="container-all" id="move-content">
+        <div class="slogan">
+            <div id="busqueda">
+            </div>
+            <div class="container-info-cover">
+                <h1>¡Encuentra tu trabajo deseado!</h1>
+                <p><b>Busca opciones de trabajo y nuevas ofertas laborales.</b></p>
+            </div>
+        </div>
+        <div class="container-post">
+            <input type="radio" id="Todos" name="categories" value="Todos" checked>
+            <input type="radio" id="Publicaciones" name="categories" value="Publicaciones">
+            <input type="radio" id="Empleos" name="categories" value="Empleos">
+            <input type="radio" id="Empresas" name="categories" value="Empresas">
+            <input type="radio" id="Eventos" name="categories" value="Eventos">
+            <input type="radio" id="Servicios" name="categories" value="Servicios">
+            <div class="container-category">
+                <label for="Todos">Todos</label>
+                <label for="Publicaciones">Publicaciones</label>
+                <label for="Empleos">Empleos</label>
+                <label for="Empresas">Empresas</label>
+                <label for="Eventos">Eventos</label>
+                <label for="Servicios">Servicios</label>
+            </div>
+            <div class="posts">
+                <div class="post" data-category="Empleos">
+                    <div class="ctn-img">
+                        <img src="../img/logo1.PNG" alt="">
+                    </div>
+                    <h2>Vendedor Freelance</h2>
+                    <span>Hace 3 horas</span>
+                    <ul class="ctn-tag">
+                        <li>Finanmotors S. A.</li>
+                        <li>Quito, Pichincha, Ecuador (Presencial)</li>
+                    </ul>
+                    <a href="#"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Empleos">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2> Asesor comercial</h2>
+                    <span>Hace 4 horas</span>
+                    <ul class="ctn-tag">
+                        <li>CIPLAZA ENTERRISES</li>
+                        <li>Manta, Manabí, Ecuador(Presencial)</li>
+                    </ul>
+                    <a href="#"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Publicaciones">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2>Luis Prado Gonzalez</h2>
+                    <span>Hace 2 Horas</span>
+                    <ul class="ctn-tag">
+                        <p>Hay varias formas de buscar trabajo, unas más abiertas, otras más invasivas, así como otras
+                            más sutiles. Cada una tiene su técnica, por lo que te voy a explicar cómo funciona cada una
+                            y tú decides cómo...</p>
+                    </ul>
+                    <a href="#"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Publicaciones">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2>Enrique San Juan .·. Experto en Comunicación Digital y eventos por Zoom</h2>
+                    <span>Hace 9 Horas</span>
+                    <ul class="ctn-tag">
+                        <p>El metaverso es la tendencia sociológica y económica de moda. En este sentido, ¿es LinkedIn
+                            la semilla del metaverso #B2B? En este artículo describo el #metaverso de manera sencilla y
+                            me planteo el escenario profesional que nos espera…</p>
+                    </ul>
+                    <a href="#"><button>Leer Más</button></a>
+                </div>
+                <div class="post" data-category="Eventos">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2>TechWeek 2021</h2>
+                    <span>lun., 8 nov. - dom., 14 nov.</span>
+                    <ul class="ctn-tag">
+                        <p>¡Te invitamos al evento más esperado del <br>año en tecnología! Del 8 al 14 de <br>noviembre
+                            llega la TechWeek, el evento <br>100% online y gratuito organizado por Mibucle para conocer
+                            todo sobre el mundo IT ¿Qué vas a encontrar? Stands disponibles...</p>
+                    </ul>
+                    <a href="#"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Servicios">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2>Servicio de Ayuda</h2>
+                    <span>24 Horas presente</span>
+                    <ul class="ctn-tag">
+                        <li>Preguntas Frecuentes</li>
+                        <li>Contacto</li>
+                        <li>Guia de uso</li>
+                    </ul>
+                    <a href="#"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Empresas">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2>BANCO SOLIDARIO S.A.</h2>
+                    <span>Solicitudes recientes</span>
+                    <ul class="ctn-tag">
+                        <li>Cajero/a</li>
+                        <li>Pasante area administrativa</li>
+                        <li>Mensajero</li>
+                    </ul>
+                    <a href="#"><button>Ver más</button></a>
+                </div>
+                <div class="post" data-category="Empresas">
+                    <div class="ctn-img"><img src="../img/logo1.PNG" alt=""></div>
+                    <h2>ETAFASHION</h2>
+                    <span>Solicitudes recientes</span>
+                    <ul class="ctn-tag">
+                        <li>Cajero/a</li>
+                        <li>Vendedor</li>
+                        <li>Auxiliar de bodega</li>
+                    </ul>
+                    <a href="#"><button>Ver más</button></a>
+                </div>
+            </div>
+        </div>
+        <script src="../js/busqueda.js"></script>
+        <script src="../js/notificacion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background: #f6f6f6;
+}
+
+.vacantes::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #68916f;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.slogan{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(https://moodledanu.uleam.edu.ec/pluginfile.php/1/theme_klass/footerlogo/1632838115/logo_ULEAM_2017_horizontal.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 25px -22px rgb(0, 0, 0);
+}
+
+.slogan:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(194, 231, 217, 0.521);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover{
+    max-width: 500px;
+    height: 170px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.container-category{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 200px;
+
+}
+
+.container-category label{
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 17px;
+    background: #25f39380;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-category label:hover{
+    opacity: 0.8;
+}
+
+.container-post{
+    max-width: 1600px;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.posts .post{
+    background: #fff;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.post .ctn-img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.post .ctn-img img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.post h2{
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.post span{
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.ctn-tag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:justify;
+    padding: 0px 15px;
+}
+.ctn-tag ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:left;
+}
+
+.ctn-tag li{
+    list-style: none;
+    font-size: 14px;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #e8e8e8;
+    cursor: default;
+    margin-right: 16px;
+
+}
+
+
+.post button{
+    margin-top: 20px;
+    margin-left: 23%;
+    padding: 10px 50px;
+    font-size: 16px;
+    background:rgb(243, 51, 51);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.post button:hover{
+    opacity: 0.9;
+}
+
+.container-category div{
+    flex-grow: 1;
+
+}
+#add{
+    background:#31af46;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 35px;
+    line-height: 25px;
+    transition: .3s ease all;
+    font-size: 24px;
+    color: white;
+    padding: 0px 4px;
+}
+#add:hover{
+    opacity: 0.9;
+}
+[value="Todos"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+[value="Publicaciones"]:checked ~ .posts .post:not([data-category~="Publicaciones"]),
+[value="Empleos"]:checked ~ .posts .post:not([data-category~="Empleos"]),
+[value="Vacantes"]:checked ~ .posts .post:not([data-category~="Vacantes"]),
+[value="Eventos"]:checked ~ .posts .post:not([data-category~="Eventos"]),
+[value="Servicios"]:checked ~ .posts .post:not([data-category~="Servicios"]){
+    display: none;
+}
+
+[value="Todos"]:checked ~ .container-category [for="Todos"],
+[value="Publicaciones"]:checked ~ .container-category [for="Publicaciones"],
+[value="Empleos"]:checked ~ .container-category [for="Empleos"],
+[value="Vacantes"]:checked ~ .container-category [for="Vacantes"],
+[value="Eventos"]:checked ~ .container-category [for="Eventos"],
+[value="Servicios"]:checked ~ .container-category [for="Servicios"]{
+    background:rgb(119, 175, 156);
+    color: #fff;
+}

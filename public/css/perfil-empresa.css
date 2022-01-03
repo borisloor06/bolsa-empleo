@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background: #f6f6f6;
+}
+
+.perfil:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #68916f;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main{
+    max-width: 100%;
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+main h1{
+    color: rgb(52, 70, 116);
+}
+.datos-perfil{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}
+.descripcion, .cursos, .experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.personales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0px;
+}
+.datos-perfil div h2{
+    width: 100%;
+}
+.personales h3{
+    width: 20%;
+}
+.personales p{
+    width: 20%;
+}
+h3{
+    font-size: 22px;
+    color: rgb(97, 187, 235);
+}
+p{
+    font-size: 20px;
+}
+.datos-perfil button{
+    width: 80%;
+    padding: 5px 50px;
+    font-size: 18px;
+    background:rgb(119, 175, 156);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: auto;
+}
+.datos-perfil button:hover{
+    opacity: 0.9;
+}
+.descripcion{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}

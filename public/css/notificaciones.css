@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=Material+Icons';
+*{
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.notificacion{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.notification-container {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 10rem;
+    width: 400px;
+    font-weight: 300;
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+    margin-right: 112px;
+    margin-top: 80px;
+    display: none;
+  }
+.notification-container:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    transform: translate(-1rem, -100%);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid #68916f;
+  }
+.notification-container h3 {
+    font-size: 75%;
+    color: #68916f;
+    padding: 20px;
+  }
+.notification-container i {
+    color: #000000;
+    font-size: 100%;
+    position: absolute;
+  }
+.notification-container i.right {
+    right: 30px;
+  }
+.notification-container em {
+    margin-right: 0.75rem;
+    font-weight: 700;
+    font-size: 115%;
+    color: #000000;
+    vertical-align: bottom;
+    display: inline-block;
+}
+  
+
+.notification.new {
+    background: #68916f41;
+}
+input.checkbox[type=checkbox] {
+    display: none;
+}
+input.checkbox[type=checkbox] + label {
+    display: block;
+}
+input.checkbox[type=checkbox]:not(:checked) + label {
+    transition: height 0.25s;
+    height: 0;
+    padding: 0;
+    font-size: 0;
+    border: none;
+}
+input.checkbox[type=checkbox]:not(:checked) + label * {
+    display: none;
+}
+input.checkbox[type=checkbox]:checked + label {
+    height: 3.25rem;
+    padding: 1.125rem 4rem 0.75rem 2rem;
+    font-size: 75%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.notificacion{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+}
